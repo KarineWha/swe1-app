@@ -28,6 +28,10 @@ DEBUG = True
 # ALLOWED_HOSTS = []. This si the defaukt that we need to change
 ALLOWED_HOSTS = ['djangotutorial-env.eba-nmmp2sex.us-west-2.elasticbeanstalk.com']
 
+# Trying this for ADMIN site
+CSRF_TRUSTED_ORIGINS = ['https://djangotutorial-env.eba-nmmp2sex.us-west-2.elasticbeanstalk.com',
+                         'http://djangotutorial-env.eba-nmmp2sex.us-west-2.elasticbeanstalk.com']
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -125,3 +129,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Trying to fix style sheet
 STATIC_ROOT = 'static'
+
